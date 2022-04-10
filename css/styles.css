@@ -511,7 +511,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.4em;
-  font-family: "Roboto", Arial, sans-serif; }
+  font-family: Helvetica, Arial, sans-serif; }
   @media only screen and (min-width: 768px) {
     body {
       line-height: 1.5em; } }
