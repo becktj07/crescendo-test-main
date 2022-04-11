@@ -1,15 +1,9 @@
 ﻿
-.header {
-    @extend .wrapper;
-    max-width: none;
-    padding: 20px 0;
-}
-
-.header-logo {
+.header-logo img {
     width:200px;
     margin: 0 auto;
     text-align: center;
-    display: block;
+    display: inline-block;
 }
 
 .nav-launch {
