@@ -14,7 +14,7 @@
 }
 
 .acme-logo--mobile {
-    width: 233px;
+    width: 220px;
     
     @media #{$mq-large} {
         display: none;
@@ -37,9 +37,15 @@
 
     @media #{$mq-large} {
         display: inline;
-        width: 220px;
+        width: 180px;
         padding-right: 1.5rem;
         border-right: 1px solid #ccc;
+        margin: 1.5rem 0 1.5rem 0;
+    }
+
+    @media #{$mq-xlarge} {
+        width: 220px;
+        margin:0;
     }
 }
 
@@ -75,7 +81,7 @@
 }
 
 .main-nav ul {
-    padding: 0;
+    padding: 0 20px;
     margin: 0;
     
     @media #{$mq-large} {
@@ -117,7 +123,7 @@
             padding: 1.25rem;
             margin: 0 auto 0.75rem auto;
             display: block;
-            width: 95%;
+            //width: 95%;
             background-color: $lightNeutral;
             text-align: center;
 
@@ -156,6 +162,11 @@
     background-color: $darkPrimary;
     height: 1.5rem;
     width: 100%;
+    margin-top: 2.5rem;
+
+    @media #{$mq-large} {
+        margin-top: 0;
+    }
 }
 
 .site-links {
@@ -165,7 +176,6 @@
     display: block;
     padding: 1rem;
     border-bottom: 1px solid $neutral;
-    width: 90%;
     margin: 0 auto 1rem auto;
     
     @media #{$mq-large} {

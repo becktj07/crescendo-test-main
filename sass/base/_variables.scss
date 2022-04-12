@@ -5,8 +5,10 @@ $mq-small: "only screen and (min-width:480px)";
 $mq-small-width: 480px;
 $mq-medium: "only screen and (min-width:768px)";
 $mq-medium-width: 768px;
-$mq-large: "only screen and (min-width:980px)";
-$mq-large-width: 980px;
+$mq-large: "only screen and (min-width:1024px)";
+$mq-large-width: 1024px;
+$mq-xlarge: "only screen and (min-width:1309px)";
+$mq-arge-width: 1309px;
 
 // To use... @media #{variable}
 

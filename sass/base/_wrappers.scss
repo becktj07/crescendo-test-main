@@ -9,12 +9,20 @@ $wrapper-padding: 0 20px; //The gutter pixel amount of the wrapper
     @extend .clearfix;
     position: relative;
     width: 100%;
-    padding: 0;
+    padding: $wrapper-padding;
     max-width: $wrapper-width;
     margin: 0 auto;
 
     @media #{$mq-large} {
         padding: $wrapper-padding;
+    }
+}
+
+.wrapper--mobile {
+    padding: 0;
+
+    @media #{$mq-large} {
+        padding: 0 20px!important;
     }
 }
 
@@ -27,5 +35,21 @@ $wrapper-padding: 0 20px; //The gutter pixel amount of the wrapper
     
     @media #{$mq-large} {
 
+    }
+}
+
+.full-screen-width--gray {
+    @extend .full-screen-width;
+    background-color: $secondary;
+    padding: 3rem 0;
+
+    h2, h3 {
+        color:#000;
+        font-weight: normal;
+        text-align: left;
+    }
+
+    h3 {
+        font-size: 1rem;
     }
 }
