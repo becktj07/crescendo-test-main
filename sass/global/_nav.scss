@@ -5,7 +5,7 @@
     text-align: center;
     background-color: $lightNeutral;
 
-    @media #{$mq-medium} {
+    @media #{$mq-large} {
         display: inline-block; 
         padding: 22px 0 0 0;
         background-color: transparent;
@@ -16,7 +16,7 @@
 .acme-logo--mobile {
     width: 233px;
     
-    @media #{$mq-medium} {
+    @media #{$mq-large} {
         display: none;
     }
 }
@@ -24,16 +24,18 @@
 .acme-logo--desktop {
     display: none;
 
-    @media #{$mq-medium} {
+    @media #{$mq-large} {
         width: 130px;
         display: inline-block;
+        position: relative;
+        top: 12px;
     }
 }
 
 .research-logo {
     display: none;
 
-    @media #{$mq-medium} {
+    @media #{$mq-large} {
         display: inline;
         width: 220px;
         padding-right: 1.5rem;
@@ -52,7 +54,7 @@
         cursor: pointer;
     }
 
-    @media #{$mq-medium} {
+    @media #{$mq-large} {
         display: none;
     }
 }
@@ -63,9 +65,9 @@
     padding: 0;
     margin: 0 auto;
 
-    @media #{$mq-medium} {
+    @media #{$mq-large} {
         color: #000;
-        width: 50%;
+        width: 65%;
         display: inline-block;
         position: relative;
         top: 1.75rem;
@@ -73,21 +75,23 @@
 }
 
 .main-nav ul {
+    padding: 0;
+    margin: 0;
+    
+    @media #{$mq-large} {
+        padding: 0 20px;
+    }
 
     & ul {
-        margin: 0;
-        padding: 0;
-        height: 0;
-        overflow: hidden;
         color: $darkSecondary;
 
-        @media #{$mq-medium} {
+        @media #{$mq-large} {
             display: inline-block;
             margin: 0;
         }
     }
 
-    li {
+    & li {
         @include box-sizing;
         display: block;
         line-height: 50px;
@@ -97,7 +101,7 @@
         position: relative;
         z-index: 30;
 
-        @media #{$mq-medium} {
+        @media #{$mq-large} {
             width: auto;
             line-height: 1em;
             display: inline-block;
@@ -111,7 +115,7 @@
             color: $darkNeutral;
             text-decoration: none;
             padding: 1.25rem;
-            margin: 0 auto 0.75rem;
+            margin: 0 auto 0.75rem auto;
             display: block;
             width: 95%;
             background-color: $lightNeutral;
@@ -122,16 +126,29 @@
                 text-decoration: none;
             }
 
-            @media #{$mq-medium} {
+            @media #{$mq-large} {
                 background-color: transparent;
-                padding: 0 90px 0 0;
+                width: auto;
+                //padding: 1rem 6rem 0 0;
                 color: #000;
 
-                &:last-of-type {
-                    padding-right: 0;
-                }
+                // &:first-of-type {
+                //     padding-left: 2rem;
+                // }
+
+                // &:last-of-type {
+                //     padding-right: 0;
+                // }
             }
         }
+    }
+}
+
+.main-nav__list {
+
+    @media #{$mq-large} {
+        display: flex;
+        justify-content: space-between;
     }
 }
 
@@ -147,8 +164,11 @@
     text-align: center;
     display: block;
     padding: 1rem;
+    border-bottom: 1px solid $neutral;
+    width: 90%;
+    margin: 0 auto 1rem auto;
     
-    @media #{$mq-medium} {
+    @media #{$mq-large} {
         display: none;
     }
 }

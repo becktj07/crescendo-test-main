@@ -60,11 +60,6 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-h1 {
-    font-size:$font-size-small;
-    color: green!important;
-}
-
 body {
     color: $body-font-color;
     margin: 0;
@@ -103,12 +98,6 @@ h3 {
     font-size:$font-size-medium;
     margin: 0 0 1em 0;
     color: $primary;
-}
-
-ul {
-    font-size:15px;
-    margin:0 0 1em 0;
-    padding-left: 0;
 }
 
 li {
