@@ -6,9 +6,8 @@
 }
 
 .grid-wrapper {
-  @extend .wrapper;
-  @extend .flex-container;
-  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .grid-image-container {
@@ -19,7 +18,6 @@
 .grid-item {
   @include box-sizing;
   flex-basis: 100%;
-  padding: 0 10px 10px 0;
 }
 
 /*-----------------------------
@@ -30,7 +28,6 @@
   @extend .grid-item;
 
   @media #{$mq-small} {
-    padding: 10px;
     flex-basis: 50%;
   }
 }
@@ -42,12 +39,8 @@
 .three-col-item {
   @extend .grid-item;
 
-  @media #{$mq-small} {
-    padding: 10px;
-    flex-basis: 50%;
-  }
   @media #{$mq-medium} {
-    flex-basis: 33.333%;
+    flex-basis: 32%;
   }
 }
 

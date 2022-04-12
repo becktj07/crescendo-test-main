@@ -177,28 +177,6 @@ picture {
     position: relative;
 }
 
-//Flexbox Classes
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: stretch;
-    flex-flow: row wrap;
-}
-
-.flex-item {
-    -webkit-order: 0;
-    order: 0;
-    -webkit-flex-grow: 1;
-    flex-grow: 1;
-    -webkit-flex-basis: auto;
-    flex-basis: auto;
-    -webkit-align-self: auto;
-    align-self: auto;
-}
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
