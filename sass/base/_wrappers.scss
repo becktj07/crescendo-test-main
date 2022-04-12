@@ -14,7 +14,25 @@ $wrapper-padding: 0 20px; //The gutter pixel amount of the wrapper
     margin: 0 auto;
 
     @media #{$mq-large} {
+        @include box-sizing;
+        @extend .clearfix;
+        position: relative;
+        width: 100%;
+        padding: $wrapper-padding;
+        max-width: $wrapper-width;
+        margin: 0 auto;
+    }
+}
 
+.wrapper--mobile-nav {
+    @include box-sizing;
+    @extend .clearfix;
+    position: relative;
+    width: 100%;
+    padding: 0;
+
+    @media #{$mq-large} {
+        display: none;
     }
 }
 

@@ -1,14 +1,48 @@
-﻿
-.header-logo img {
-    width:200px;
+﻿.header {
+    display: block; 
+    padding: 16px 0 10px 0;
     margin: 0 auto;
     text-align: center;
-    display: inline-block;
+    background-color: $lightNeutral;
+
+    @media #{$mq-medium} {
+        display: inline-block; 
+        padding: 22px 0 0 0;
+        background-color: transparent;
+        width: 30%;
+    }
+}
+
+.acme-logo--mobile {
+    width: 233px;
+    
+    @media #{$mq-medium} {
+        display: none;
+    }
+}
+
+.acme-logo--desktop {
+    display: none;
+
+    @media #{$mq-medium} {
+        width: 130px;
+        display: inline-block;
+    }
+}
+
+.research-logo {
+    display: none;
+
+    @media #{$mq-medium} {
+        display: inline;
+        width: 220px;
+        padding-right: 1.5rem;
+        border-right: 1px solid #ccc;
+    }
 }
 
 .nav-launch {
-    font-size: $font-size-small;
-    color: $body-font-color;
+    color: #d81e05;
     position: absolute;
     top: 0;
     right: 0;
@@ -18,7 +52,7 @@
         cursor: pointer;
     }
 
-    @media #{$mq-large} {
+    @media #{$mq-medium} {
         display: none;
     }
 }
@@ -29,26 +63,28 @@
     padding: 0;
     margin: 0 auto;
 
-    @media #{$mq-large} {
-        text-align: center;
+    @media #{$mq-medium} {
+        color: #000;
+        width: 50%;
+        display: inline-block;
+        position: relative;
+        top: 1.75rem;
     }
 }
 
-.main-nav ul:first-of-type {
-    height: 0;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    position: relative;
-    z-index: 100;
-    background-color: #ffffff;
+.main-nav ul {
 
-    @media #{$mq-large} {
-        width: auto;
-        height: auto;
-        background-color: $neutral;
-        overflow: visible;
+    & ul {
+        margin: 0;
+        padding: 0;
+        height: 0;
+        overflow: hidden;
+        color: $darkSecondary;
+
+        @media #{$mq-medium} {
+            display: inline-block;
+            margin: 0;
+        }
     }
 
     li {
@@ -58,154 +94,61 @@
         padding: 0;
         margin: 0;
         width: 100%;
-        color: $body-font-color;
-        border-top: 1px solid $darkNeutral;
-        border-right: 1px solid $darkNeutral;
         position: relative;
         z-index: 30;
 
-        @media #{$mq-large} {
+        @media #{$mq-medium} {
             width: auto;
             line-height: 1em;
             display: inline-block;
             padding: 0;
-            margin: 0 0 0 15px;
-            text-align: right;
-            border: none;
+            margin: 0;
         }
 
         & a {
             @include box-sizing;
-            color: #ffffff;
+            font-size: .95rem;
+            color: $darkNeutral;
             text-decoration: none;
-            font-size: $font-size-small;
-            padding: 14px 20px;
+            padding: 1.25rem;
+            margin: 0 auto 0.75rem;
             display: block;
-            height: 49px;
-            line-height: 21px;
+            width: 95%;
+            background-color: $lightNeutral;
+            text-align: center;
 
             &:hover {
-                color: $primary;
+                color: #000;
                 text-decoration: none;
             }
 
-            @media #{$mq-large} {
-                padding: 5px 0;
-                display: inline-block;
-                height:auto;
-                line-height: 1em; 
-            }
-        }
+            @media #{$mq-medium} {
+                background-color: transparent;
+                padding: 0 90px 0 0;
+                color: #000;
 
-        & ul {
-            text-align: left;
-            width: 100%;
-            background-color: $neutral;
-            margin: 0;
-            padding: 0;
-            height: 0;
-            overflow: hidden;
-
-            @media #{$mq-large} {
-                text-align: center;
-                position: absolute;
-                top: 23px;
-                left: 0px;
-                z-index: 100;
-                width: 150px;
-                overflow: hidden;
-                display: block;
-                margin: 0 -15px 0 -10px;
-            }
-        }
-    }
-}
-
-.secondary-nav {
-
-    & li {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-        line-height: 50px;
-        border:solid $darkNeutral;
-        border-width:1px 0 0 0 !important;
-
-        @media #{$mq-large} {
-            padding: 5px !important;
-            position: relative !important;
-            width: 100% !important;
-            margin: 0 !important;
-            line-height: 2em !important;
-            text-align: center !important;
-
-            &:hover {
-                background-color: $darkNeutral !important;
-
-                & a {
-                    color: $primary !important;
+                &:last-of-type {
+                    padding-right: 0;
                 }
             }
         }
     }
-
-    & a {
-        font-size: $font-size-small;
-        margin: 0;
-        padding: 14px 20px 14px 38px;
-        color: $body-font-color;
-        text-decoration: none;
-
-        &:hover {
-            color: $darkPrimary;
-            text-decoration: none;
-        }
-
-        @media #{$mq-large} {
-            padding: 0;
-            width: 100% !important;
-            position: relative;
-            display: block;
-            line-height: 1em;
-        }
-    }
-
-    @media #{$mq-large} {
-        border: 2px solid $darkNeutral;
-        padding: 0;
-        margin: 0 !important;
-        padding: 0 !important;
-    }
 }
 
-.secondary-expander {
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    right: 0;
-    text-align: center;
-    font-size: 20px;
-    width: 50px;
-    height: 50px;
-    z-index: 50;
-    display: inline-block;
-    color: $primary;
-    border-left: 1px solid $darkNeutral;
+.blue-nav-bar  {
+    background-color: $darkPrimary;
+    height: 1.5rem;
+    width: 100%;
+}
 
-    @media #{$mq-large} {
+.site-links {
+    color: $darkPrimary;
+    font-size: 1em;
+    text-align: center;
+    display: block;
+    padding: 1rem;
+    
+    @media #{$mq-medium} {
         display: none;
     }
-
-    &:hover {
-        background-color: #ededef;
-    }
 }
-
-.secondary-nav-open {
-    width: 50px;
-    height: 50px;
-}
-
-/* =================================
-   Utility Nav
-   ================================= */

@@ -47,12 +47,3 @@
         text-transform: uppercase;
     }
 }
-
-.full-screen-image__text-overlay--left {
-    position: absolute;
-    left: 0;
-
-    @media #{$mq-medium} {
-        text-align: left;
-    }
-}
