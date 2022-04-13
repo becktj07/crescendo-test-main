@@ -15,6 +15,9 @@
     width: 100%;
 }
 
+
+/*full screen images */
+
 .hero-image {
     background-image:url("/images/hero-mobile.jpg");
     background-size: cover;
@@ -33,7 +36,6 @@
 
      @media #{$mq-large} {
         background-image:url("/images/hero-desktop.jpg");
-        //height: 400px;
     }
 
     @media #{$mq-xlarge} {
@@ -41,12 +43,19 @@
     }
 }
 
+.blue-pattern {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image:url("https://via.placeholder.com/4000x600.jpg");
+}
+
 .full-screen-image__text-overlay {
         position: relative;
         transform: translateY(40%);
 
         @media #{$mq-xlarge} {
-            top:50%;
+            top: 50%;
             transform: translateY(75%);
         }
 

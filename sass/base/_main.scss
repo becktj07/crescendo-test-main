@@ -143,29 +143,28 @@ picture {
 .cta-button {
     @include box-sizing;
     font-size:$font-size-button;
-    background-color: $secondary;
+    background-color: transparent;
+    border: 1px solid #fff;
     color: #ffffff;
     line-height: 1em;
-    padding: 8px 25px;
+    padding: 1rem 2.5rem;
     text-decoration: none;
     cursor: pointer;
     display: inline-block;
-    height: 37px;
-    /*-webkit-transition: background-color .05s linear;
-    -moz-transition: background-color .05s linear;
-    -o-transition: background-color .05s linear;
-    -ms-transition: background-color .05s linear;
-    transition: background-color .05s linear;*/
+    // -webkit-transition: background-color .05s linear;
+    // -moz-transition: background-color .05s linear;
+    // -o-transition: background-color .05s linear;
+    // -ms-transition: background-color .05s linear;
+    // transition: background-color .05s linear;
 
     &:hover {
-        background-color: $darkSecondary;
-        color: #ffffff;
         text-decoration: none;
-        -webkit-transition: background-color .05s linear;
-        -moz-transition: background-color .05s linear;
-        -o-transition: background-color .05s linear;
-        -ms-transition: background-color .05s linear;
-        transition: background-color .05s linear;
+        color: #fff;
+        // -webkit-transition: background-color .05s linear;
+        // -moz-transition: background-color .05s linear;
+        // -o-transition: background-color .05s linear;
+        // -ms-transition: background-color .05s linear;
+        // transition: background-color .05s linear;
     }
 }
 

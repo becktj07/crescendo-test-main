@@ -40,7 +40,7 @@ $wrapper-padding: 0 20px; //The gutter pixel amount of the wrapper
 
 .full-screen-width--gray {
     @extend .full-screen-width;
-    background-color: $secondary;
+    background-color: #ebebeb;
     padding: 3rem 0;
 
     h2, h3 {
@@ -50,6 +50,6 @@ $wrapper-padding: 0 20px; //The gutter pixel amount of the wrapper
     }
 
     h3 {
-        font-size: 1rem;
+        font-size: .8rem;
     }
 }

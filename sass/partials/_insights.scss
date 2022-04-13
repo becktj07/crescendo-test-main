@@ -1,8 +1,57 @@
 .insights-card {
     background-color: #fff;
     padding: 1rem;
+    height: 320px;
+    -webkit-box-shadow: 1px 2px 13px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 2px 13px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 2px 13px 0px rgba(0,0,0,0.75);
+    margin-bottom: 1rem;
+
+    @media #{mq-small}{
+        margin-bottom: 0;
+        min-height: 220px;
+    }
+
+    @media #{$mq-medium} {
+        min-height: 320px;
+    }
+
+    @media #{$mq-large} {
+        min-height: 300px;
+    }
 
     img {
         width:100%;
+        margin-bottom: 1rem;
+    }
+
+    h2 {
+        display: block;
+        font-weight: bold;
+        font-size: $font-size-large;
+    }
+}
+
+.insights-card--one {
+    border-bottom: .5rem solid $primary;
+
+    h2 {
+        color: $primary;
+    }
+}
+
+.insights-card--two {
+    border-bottom: .5rem solid $secondary;
+
+    h2 {
+        color: $secondary;
+    }
+}
+
+.insights-card--three {
+    border-bottom: .5rem solid $lightPrimary;
+
+    h2 {
+        color: $lightPrimary;
     }
 }
