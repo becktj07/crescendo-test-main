@@ -1,5 +1,4 @@
 var gulp = require('gulp'),
-handlebars = require('gulp-handlebars');
 sass = require('gulp-sass'),
 autoprefixer = require('gulp-autoprefixer'),
 browserSync = require('browser-sync').create();

@@ -741,6 +741,26 @@ picture {
       background-color: transparent;
       width: 30%; } }
 
+.main-nav {
+  display: none; }
+
+.main-nav.nav-open {
+  display: block; }
+
+@media only screen and (min-width: 1024px) {
+  .nav-open {
+    display: none; } }
+
+.nav-launch img {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 34px;
+  height: 34px; }
+  @media only screen and (min-width: 1024px) {
+    .nav-launch img {
+      display: none; } }
+
 .acme-logo--mobile {
   width: 220px; }
   @media only screen and (min-width: 1024px) {

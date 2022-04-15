@@ -13,6 +13,35 @@
     }
 }
 
+.main-nav {
+    display: none;
+}
+
+.main-nav.nav-open {
+    display: block;
+}
+
+.nav-open {
+    @media #{$mq-large} {
+        display: none;
+    }
+}
+
+.nav-launch {
+
+    img {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 34px;
+        height: 34px;
+
+        @media #{$mq-large} {
+            display: none;
+        }
+    }
+}
+
 .acme-logo--mobile {
     width: 220px;
     
@@ -123,7 +152,6 @@
             padding: 1.25rem;
             margin: 0 auto 0.75rem auto;
             display: block;
-            //width: 95%;
             background-color: $lightNeutral;
             text-align: center;
 
@@ -135,16 +163,7 @@
             @media #{$mq-large} {
                 background-color: transparent;
                 width: auto;
-                //padding: 1rem 6rem 0 0;
                 color: #000;
-
-                // &:first-of-type {
-                //     padding-left: 2rem;
-                // }
-
-                // &:last-of-type {
-                //     padding-right: 0;
-                // }
             }
         }
     }
